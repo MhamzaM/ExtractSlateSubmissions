@@ -32,7 +32,7 @@ from pathlib import Path
 print ('Number of arguments:', len(sys.argv), 'arguments.')
 print ('Argument List:', str(sys.argv))
 
-directoryName = ""
+directoryName = sys.argv[1]
 
 if sys.argv[1].endswith(".zip"):
     with zipfile.ZipFile(os.path.realpath(sys.argv[1]), 'r') as zip_ref:
